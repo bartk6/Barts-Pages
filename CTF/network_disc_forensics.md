@@ -1,5 +1,11 @@
-Network Disk Forensics
-======================
+---
+layout: page
+title: "Network Disk Forensics"
+category: CTF
+---
+- **Category**: misc
+- **Difficulty**: beginner
+- **Author**: jscarsbrook
 
 Dear bart,
 
