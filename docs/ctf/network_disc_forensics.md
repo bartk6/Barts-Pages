@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Network Disk Forensics"
-parent: CTF writeups
+parent: CTF Writeups
 ---
 - **Category**: misc
 - **Difficulty**: beginner
