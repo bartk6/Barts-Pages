@@ -1,7 +1,7 @@
 ---
 layout: default
 title : "Mary had a little lambda"
-parent: CTF
+parent: CTF wrriteups
 ---
 - **Category**: misc
 - **Difficulty**: medium

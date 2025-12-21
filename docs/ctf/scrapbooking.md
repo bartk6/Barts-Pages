@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Scrapbooking"
-parent: CTF
+parent: CTF writeups
 ---
 - **Category**: misc
 - **Difficulty**: easy

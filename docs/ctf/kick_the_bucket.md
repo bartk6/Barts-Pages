@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Kick the bucket"
-parent: CTF 
+parent: CTF writeups 
 ---
 - **Category**: none
 - **Difficulty**: beginner
