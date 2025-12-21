@@ -2,5 +2,25 @@ title: Bartholomew Walters
 description: Hello World, welcome to my site!
 theme: just-the-docs
 
+aux_links:
+  "Bartholomew on Github":
+    - "//github.com/bartk6"
+
+
+
 url: https://github.com/bartk6
 
+
+collections:
+  CTF:
+    permalink: "/CTF/:path"
+    output: true
+
+
+
+just_the_docs:
+  collections:
+    CTF:
+      name: CTF's
+
+  
