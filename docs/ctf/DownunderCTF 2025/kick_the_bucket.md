@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Kick the bucket"
-parent: CTF Writeups 
+parent: DownunderCTF 2025 
 ---
 - **Category**: none
 - **Difficulty**: beginner

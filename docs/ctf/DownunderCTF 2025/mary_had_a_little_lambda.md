@@ -1,7 +1,7 @@
 ---
 layout: default
 title : "Mary had a little lambda"
-parent: CTF Writeups
+parent: DownunderCTF 2025
 ---
 - **Category**: misc
 - **Difficulty**: medium

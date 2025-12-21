@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Network Disk Forensics"
-parent: CTF Writeups
+parent: DownunderCTF 2025
 ---
 - **Category**: misc
 - **Difficulty**: beginner

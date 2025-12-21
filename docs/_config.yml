@@ -1,6 +1,7 @@
 title: Bartholomew Walters
 description: Hello World, welcome to my site!
 theme: just-the-docs
+color_scheme: dark
 
 aux_links:
   "Bartholomew on Github":
@@ -11,16 +12,7 @@ aux_links:
 url: https://github.com/bartk6
 
 
-collections:
-  CTF:
-    permalink: "/CTF/:path"
-    output: true
 
 
 
-just_the_docs:
-  collections:
-    CTF:
-      name: CTF
 
-  

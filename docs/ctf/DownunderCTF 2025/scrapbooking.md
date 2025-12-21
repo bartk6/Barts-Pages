@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Scrapbooking"
-parent: CTF Writeups
+parent: DownunderCTF 2025
 ---
 - **Category**: misc
 - **Difficulty**: easy
