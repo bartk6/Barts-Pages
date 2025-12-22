@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Network Disk Forensics"
+title: "Network disk forensics"
 parent: DownunderCTF 2025
 ---
 - **Category**: misc
