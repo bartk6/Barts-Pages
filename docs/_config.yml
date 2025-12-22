@@ -5,6 +5,8 @@ description: Hello World, welcome to my site!
 theme: just-the-docs
 color_scheme: dark
 
+ga_tracking: G-7MFLNBH8S4
+
 aux_links:
   "Bartholomew on Github":
     - "//github.com/bartk6"
