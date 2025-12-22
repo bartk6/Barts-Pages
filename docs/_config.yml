@@ -5,6 +5,8 @@ description: Hello World, welcome to my site!
 theme: just-the-docs
 color_scheme: dark
 
+permalink: pretty
+
 ga_tracking: G-7MFLNBH8S4
 
 aux_links:
